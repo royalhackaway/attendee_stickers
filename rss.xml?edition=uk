@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[BBC News - Home]]></title>
+        <description><![CDATA[BBC News - Home]]></description>
+        <link>http://www.bbc.co.uk/news/</link>
+        <image>
+            <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+            <title>BBC News - Home</title>
+            <link>http://www.bbc.co.uk/news/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Tue, 12 Sep 2017 23:47:05 GMT</lastBuildDate>
+        <copyright><![CDATA[Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.]]></copyright>
+        <language><![CDATA[en-gb]]></language>
+        <ttl>15</ttl>
+        <item>
+            <title><![CDATA[Public sector pay cap to be lifted]]></title>
+            <description><![CDATA[The first award above the 1% cap will go to police and prison officers in England and Wales.]]></description>
+            <link>http://www.bbc.co.uk/news/uk-politics-41241295</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-politics-41241295</guid>
+            <pubDate>Tue, 12 Sep 2017 18:19:50 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/10760/production/_97742476_8459b79f-e30f-4ce4-893b-d45f0c06122c.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Brexit: Next round of talks delayed a week 'for consultation']]></title>
+            <description><![CDATA[The latest negotiating round is postponed by a week to give both sides "flexibility to make progress".]]></description>
+            <link>http://www.bbc.co.uk/news/uk-politics-41246573</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-politics-41246573</guid>
+            <pubDate>Tue, 12 Sep 2017 20:59:31 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/2749/production/_97775001_mediaitem97774999.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Apple iPhone X adopts facial recognition and OLED screen]]></title>
+            <description><![CDATA[The new handset has an edge-to-edge screen and uses facial recognition to check owners' IDs.]]></description>
+            <link>http://www.bbc.co.uk/news/technology-41228126</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/technology-41228126</guid>
+            <pubDate>Tue, 12 Sep 2017 20:57:48 GMT</pubDate>
+            <media:thumbnail width="1280" height="720" url="http://c.files.bbci.co.uk/86B7/production/_97778443_8c8884b2-38c3-49c2-9394-02b216183fd3.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Footage shows 'monster' fatberg in an east London sewer]]></title>
+            <description><![CDATA[The 250-metre fatberg was filmed by Thames Water engineers who are trying to remove the blockage.]]></description>
+            <link>http://www.bbc.co.uk/news/uk-england-london-41245984</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-england-london-41245984</guid>
+            <pubDate>Tue, 12 Sep 2017 15:32:20 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/5917/production/_97770822_mediaitem97770821.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Hope Hicks named White House Communications Director]]></title>
+            <description><![CDATA[The long-time Trump aide will be the fourth person to fill the White House role.]]></description>
+            <link>http://www.bbc.co.uk/news/world-us-canada-41245690</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-41245690</guid>
+            <pubDate>Tue, 12 Sep 2017 18:27:21 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/9E6D/production/_97775504_21772eac-64a8-42b8-868b-3beae98d5ac6.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Praying for Hurricane Irma recovery in Caribbean]]></title>
+            <description><![CDATA[Residents of Turks and Caicos Islands face a large rebuilding effort after a category 5 hurricane.]]></description>
+            <link>http://www.bbc.co.uk/news/world-latin-america-41248833</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-latin-america-41248833</guid>
+            <pubDate>Tue, 12 Sep 2017 19:46:03 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/17F31/production/_97779089_p05fx1g8.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Hurricane Irma: Prisoners still on the run after 100 escape]]></title>
+            <description><![CDATA[Police and troops are trying to restore order on the British Virgin Islands, the government says.]]></description>
+            <link>http://www.bbc.co.uk/news/uk-41243244</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-41243244</guid>
+            <pubDate>Tue, 12 Sep 2017 20:42:13 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/B533/production/_97778364_hi041649648.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Over a quarter of British people 'hold anti-Semitic attitudes', study finds]]></title>
+            <description><![CDATA[Researchers say a major study of attitudes towards Jewish people has revealed more about anti-Semitism]]></description>
+            <link>http://www.bbc.co.uk/news/uk-41241353</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-41241353</guid>
+            <pubDate>Tue, 12 Sep 2017 23:34:56 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Government wins committee change vote]]></title>
+            <description><![CDATA[Opposition MPs said the motion was a "constitutional outrage" but it was backed by 320 to 301.]]></description>
+            <link>http://www.bbc.co.uk/news/uk-politics-41245903</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-politics-41245903</guid>
+            <pubDate>Tue, 12 Sep 2017 21:47:01 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/68E7/production/_97755862_commonsafp.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Edith Windsor: Gay rights trailblazer dies aged 88]]></title>
+            <description><![CDATA[Ms Windsor's same sex marriage fight led to a landmark US legal ruling in 2013.]]></description>
+            <link>http://www.bbc.co.uk/news/world-us-canada-41248327</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-41248327</guid>
+            <pubDate>Tue, 12 Sep 2017 21:52:56 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/7F55/production/_97779523_windsor_getty2.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Storm Aileen set to bring strong winds to parts of the UK]]></title>
+            <description><![CDATA[The Met Office says the first named storm this season will bring gusts of up to 75mph.]]></description>
+            <link>http://www.bbc.co.uk/news/uk-41241014</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-41241014</guid>
+            <pubDate>Tue, 12 Sep 2017 19:02:50 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/167DF/production/_97772129_e3bb2b14-1f3d-452f-8992-d0e1fabe5517.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Oil spill off coast of Greece 'environmental disaster']]></title>
+            <description><![CDATA[Emergency crews have begun an oil spill clean-up after an oil tanker sank close to the island of Salamis.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41249303</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41249303</guid>
+            <pubDate>Tue, 12 Sep 2017 21:30:30 GMT</pubDate>
+            <media:thumbnail width="1024" height="575" url="http://c.files.bbci.co.uk/02B9/production/_97779600_p05fx3xh.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Trump welcomes ninth grandchild Eric 'Luke' Trump to world]]></title>
+            <description><![CDATA[The president's son Eric and his wife Lara, who wed in 2014, announce the birth of their first child.]]></description>
+            <link>http://www.bbc.co.uk/news/world-us-canada-41247929</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-41247929</guid>
+            <pubDate>Tue, 12 Sep 2017 19:13:39 GMT</pubDate>
+            <media:thumbnail width="696" height="392" url="http://c.files.bbci.co.uk/16A73/production/_97778729_eric.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Paper review: PM facing 'backlash' over public pay]]></title>
+            <description><![CDATA[Theresa May's decision to lift the 1% cap on public pay dominates the front pages.]]></description>
+            <link>http://www.bbc.co.uk/news/blogs-the-papers-41249004</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/blogs-the-papers-41249004</guid>
+            <pubDate>Tue, 12 Sep 2017 23:00:46 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/2EE8/production/_97780021_index-pic-2.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Chesterfield's 'awful' Princess Diana tribute mocked]]></title>
+            <description><![CDATA[The tribute to the Princess of Wales is part of Chesterfield's well dressing celebrations.]]></description>
+            <link>http://www.bbc.co.uk/news/uk-england-derbyshire-41243025</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-england-derbyshire-41243025</guid>
+            <pubDate>Tue, 12 Sep 2017 15:46:28 GMT</pubDate>
+            <media:thumbnail width="965" height="543" url="http://c.files.bbci.co.uk/8A09/production/_97773353_mediaitem97772338.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Hands on with the new iPhone X]]></title>
+            <description><![CDATA[Apple has announced a new iPhone that will cost $999. Is it worth the money? The BBC's Dave Lee got hands on with the much anticipated device.]]></description>
+            <link>http://www.bbc.co.uk/news/technology-41249273</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/technology-41249273</guid>
+            <pubDate>Tue, 12 Sep 2017 20:57:30 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/17CD9/production/_97779479_p05fx3nl.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Hurricane Irma: South Carolina man takes a walk as storm hits]]></title>
+            <description><![CDATA[Instagram user Patrick Spoon went for a walk around Charleston, South Carolina, as the storm hit.]]></description>
+            <link>http://www.bbc.co.uk/news/world-us-canada-41245935</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-41245935</guid>
+            <pubDate>Tue, 12 Sep 2017 17:22:34 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/6ADD/production/_97775372_p05fwrjx.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Pictures: Wildlife Photographer of the Year 2017 finalists]]></title>
+            <description><![CDATA[The finalists for the Wildlife Photographer of the Year have been announced. As usual the images are pretty special! Here are some of our favourites.]]></description>
+            <link>http://www.bbc.co.uk/newsround/41239953</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/newsround/41239953</guid>
+            <pubDate>Tue, 12 Sep 2017 16:02:17 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/F84F/production/_97776536_mediaitem97776041.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Fatbergs: What causes them and how to prevent them]]></title>
+            <description><![CDATA[What causes fatbergs to form? And is there anything you can do to stop them?]]></description>
+            <link>http://www.bbc.co.uk/news/uk-england-41246551</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-england-41246551</guid>
+            <pubDate>Tue, 12 Sep 2017 15:28:36 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/11D1A/production/_97768927_image1.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Man-of-war spotted along coast in Cornwall and Wales]]></title>
+            <description><![CDATA[The RNLI closed Perranporth beach to swimmers because of large numbers of jellyfish-like creatures.]]></description>
+            <link>http://www.bbc.co.uk/news/uk-england-cornwall-41237286</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-england-cornwall-41237286</guid>
+            <pubDate>Tue, 12 Sep 2017 16:24:31 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/1756C/production/_97769559_jelly2.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Plane crash: Pilot walks away after aircraft hits tree]]></title>
+            <description><![CDATA[A pilot walked away with minor injuries after a dramatic collision in the US.]]></description>
+            <link>http://www.bbc.co.uk/news/world-us-canada-41237592</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-41237592</guid>
+            <pubDate>Tue, 12 Sep 2017 07:05:20 GMT</pubDate>
+            <media:thumbnail width="1024" height="575" url="http://c.files.bbci.co.uk/D58A/production/_97766645_p05fv9s6.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[JJ Abrams to direct Star Wars: Episode IX]]></title>
+            <description><![CDATA[The writer-director is returning to end the sequel trilogy, as the release is delayed by six months.]]></description>
+            <link>http://www.bbc.co.uk/news/entertainment-arts-41245547</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/entertainment-arts-41245547</guid>
+            <pubDate>Tue, 12 Sep 2017 20:31:52 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/2D25/production/_97775511_abrams_shutterstock.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[What will augmented reality do on the new iPhones?]]></title>
+            <description><![CDATA[Navigation, gaming and shopping could all be transformed by augmented reality on the next iPhones.]]></description>
+            <link>http://www.bbc.co.uk/news/technology-41242524</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/technology-41242524</guid>
+            <pubDate>Tue, 12 Sep 2017 11:51:09 GMT</pubDate>
+            <media:thumbnail width="1024" height="575" url="http://c.files.bbci.co.uk/5985/production/_97771922_p05fvxr1.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Was your T-shirt made in North Korea?]]></title>
+            <description><![CDATA[North Korea's textile industry is the latest to come under UN sanctions - so how big a sector is it?]]></description>
+            <link>http://www.bbc.co.uk/news/business-41236525</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/business-41236525</guid>
+            <pubDate>Tue, 12 Sep 2017 09:40:53 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/6C6C/production/_97765772_p05fvly6.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Am I American yet?]]></title>
+            <description><![CDATA[Three years after winning the US green card lottery, a Somali immigrant struggles to make a new life.]]></description>
+            <link>http://www.bbc.co.uk/news/world-us-canada-41205723</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-41205723</guid>
+            <pubDate>Mon, 11 Sep 2017 22:46:53 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/5934/production/_97763822_p05ft6p1.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[BBC News Channel]]></title>
+            <description><![CDATA[BBC coverage of latest developments]]></description>
+            <link>http://www.bbc.co.uk/news/10318089</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/10318089</guid>
+            <pubDate>Fri, 17 Feb 2017 09:41:12 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://news.bbcimg.co.uk/media/images/83122000/png/_83122356_globe_2048x1152.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Sir Peter Hall: A giant of British theatre]]></title>
+            <description><![CDATA[A look back at the life of the man who founded the Royal Shakespeare Company.]]></description>
+            <link>http://www.bbc.co.uk/news/entertainment-arts-29467703</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/entertainment-arts-29467703</guid>
+            <pubDate>Tue, 12 Sep 2017 08:58:43 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/1599C/production/_97767488_gettyimages-108319995.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Brexit: What next for the government's EU repeal bill?]]></title>
+            <description><![CDATA[A majority of MPs have backed the bill's broad principles, but a number of contentious issues remain.]]></description>
+            <link>http://www.bbc.co.uk/news/uk-politics-41243930</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-politics-41243930</guid>
+            <pubDate>Tue, 12 Sep 2017 16:51:54 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/103A3/production/_95776466_gettyimages-522459100.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Rooney family slavery victim 'made to dig own grave']]></title>
+            <description><![CDATA[Eighteen people were illegally trafficked and exploited to fund the Rooney family's lavish lifestyle.]]></description>
+            <link>http://www.bbc.co.uk/news/uk-england-lincolnshire-40903474</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/uk-england-lincolnshire-40903474</guid>
+            <pubDate>Tue, 12 Sep 2017 12:09:23 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/0F92/production/_97768930_caravan5.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[The collapse of Northern Rock: Ten years on]]></title>
+            <description><![CDATA[The collapse of Northern Rock: Ten years on]]></description>
+            <link>http://www.bbc.co.uk/news/business-41229513</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/business-41229513</guid>
+            <pubDate>Mon, 11 Sep 2017 23:22:33 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/6028/production/_97761642_gettyimages-79145222.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[The surprising new strategy of pro-Russia bots]]></title>
+            <description><![CDATA[Networks of automated Twitter bots pushing pro-Russian propaganda are flooding their opponents with retweets and followers.]]></description>
+            <link>http://www.bbc.co.uk/news/blogs-trending-41203789</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/blogs-trending-41203789</guid>
+            <pubDate>Mon, 11 Sep 2017 23:50:43 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/13652/production/_97724497_gettyimages-586712790.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[How Sweden is becoming a cashless economy]]></title>
+            <description><![CDATA[Card and phone payments may be replacing coins and notes, but are Swedes ready to get rid of cash altogether?]]></description>
+            <link>http://www.bbc.co.uk/news/business-41095004</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/business-41095004</guid>
+            <pubDate>Mon, 11 Sep 2017 23:25:09 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/3AA2/production/_97601051_senobarjohnsencopyrightmaddysavagebbc.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Toronto Film Festival: The teen actresses gaining plaudits in I Kill Giants]]></title>
+            <description><![CDATA[Madison Wolfe and Sydney Wade are the stars of I Kill Giants, which has premiered at the festival.]]></description>
+            <link>http://www.bbc.co.uk/news/entertainment-arts-41214355</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/entertainment-arts-41214355</guid>
+            <pubDate>Tue, 12 Sep 2017 00:12:11 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/C52C/production/_97767405_fullsizerender-1.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Celtic 0-5 Paris St-Germain]]></title>
+            <description><![CDATA[Celtic sustain their heaviest ever home European defeat as Neymar leads the way for Paris St-Germain in the Champions League group stage opener.]]></description>
+            <link>http://www.bbc.co.uk/sport/football/41205802</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/sport/football/41205802</guid>
+            <pubDate>Tue, 12 Sep 2017 20:56:53 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/CBB3/production/_97774125_psg.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[England women's manager Mark Sampson: I'm not a racist]]></title>
+            <description><![CDATA[England women's head coach Mark Sampson tells BBC sports editor Dan Roan that he is not a racist after allegations against him by striker Eniola Aluko.]]></description>
+            <link>http://www.bbc.co.uk/sport/football/41247693</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/sport/football/41247693</guid>
+            <pubDate>Tue, 12 Sep 2017 17:52:39 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/17BA3/production/_97778179_p05fwt46.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[IOC is 'doing nothing' about corruption crisis, says senior official Pound]]></title>
+            <description><![CDATA[Dick Pound, a senior IOC official, accuses his organisation of doing nothing about its growing corruption crisis.]]></description>
+            <link>http://www.bbc.co.uk/sport/olympics/41248774</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/sport/olympics/41248774</guid>
+            <pubDate>Tue, 12 Sep 2017 21:31:58 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/2195/production/_97779580_dick_pound1_getty.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Chelsea 6-0 Qarabag]]></title>
+            <description><![CDATA[Davide Zappacosta scores a spectacular goal as Chelsea thrash Champions League debutants Qarabag on their return to Europe.]]></description>
+            <link>http://www.bbc.co.uk/sport/football/41216361</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/sport/football/41216361</guid>
+            <pubDate>Tue, 12 Sep 2017 22:05:07 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/B5DD/production/_97775564_zappa_getty.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Roy Hodgson confirmed as new Crystal Palace boss - is he the man to save the Eagles?]]></title>
+            <description><![CDATA[After struggling Crystal Palace announce Roy Hodgson as their new manager, BBC Sport looks at whether the former England boss is the right man for the job.]]></description>
+            <link>http://www.bbc.co.uk/sport/football/41241396</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/sport/football/41241396</guid>
+            <pubDate>Tue, 12 Sep 2017 18:39:16 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/151F/production/_97770450_p05fvw21.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Jan Brittin: England's leading female Test run scorer dies aged 58]]></title>
+            <description><![CDATA[Jan Brittin, England's leading female Test run scorer and a member of the 1993 World Cup-winning side, dies from cancer aged 58.]]></description>
+            <link>http://www.bbc.co.uk/sport/cricket/41244304</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/sport/cricket/41244304</guid>
+            <pubDate>Tue, 12 Sep 2017 14:21:14 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/18215/production/_97773889_gettyimages-1295433.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Sam Warburton: Surgery rules out Wales and Cardiff Blues player for four months]]></title>
+            <description><![CDATA[Wales and Cardiff Blues flanker Sam Warburton will miss the autumn internationals following surgery on a long-standing neck injury.]]></description>
+            <link>http://www.bbc.co.uk/sport/rugby-union/41241886</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/sport/rugby-union/41241886</guid>
+            <pubDate>Tue, 12 Sep 2017 13:07:44 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/105C9/production/_97771076_gettyimages-805244612.jpg"/>
+        </item>
+    </channel>
+</rss>
