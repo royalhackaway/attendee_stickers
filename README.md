@@ -1,8 +1,11 @@
-# pos_rss
-A simple POS printing application to print out the weather, news and optionally your Monzo balance
+# Application to print attendees information on stickers
 
-## Notes
+## Useage
 
-- The RSS feed XML is designed to be updated with a seperate script, probably running as a cron job
-- The Monzo OAuth is non-existant
-- This was very hacky and written a long time ago (despite the recent commit date) - going by the XML Tue, 12 Sep 2017 23:47:05 GMT
+CSV file of attendee information expected in the format `id, name, meal choice, allergies, meal sitting, email`. 
+
+Outputs a file in the name format `checkins_{timestamp}` of checked in attendees in the format `email, checking timestamp`.
+
+Example files provided.
+
+Icons made by [Twitter](https://www.flaticon.com/authors/twitter) from [Flaticon](https://www.flaticon.com/) is licensed by [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/)

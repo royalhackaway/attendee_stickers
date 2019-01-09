@@ -6,99 +6,105 @@ use Mike42\Escpos\PrintConnectors\FilePrintConnector;
 use Mike42\Escpos\Printer;
 use Mike42\Escpos\EscposImage;
 
-if(!file_exists( __DIR__ .  "/config.json")){
-    echo "Fatal error: missing config file";
-    exit();
-} else {
-    $config = json_decode(file_get_contents( __DIR__ .  "/config.json"), true);
-}
+register_shutdown_function("shutdown");
 
-foreach ($config as $key => $value) {
-    switch ($key) {
-        case 0:
-            $news = simplexml_load_file($value['url'], null, LIBXML_NOCDATA);
-            break;
-        
-        case 1:
-            $weather = simplexml_load_file($value['url']);
-            $synp = explode(",", $weather->{'channel'}->{'item'}->{'description'});
-            break;
-    }
-}
-$logo =  __DIR__ .  "/blq-orbit-blocks_grey.png";
-$monzo =  __DIR__ .  "/monzo_vrt_whtbg_small.png";
+// PLEASE CHANGE AS NEEDED
 $connector = new FilePrintConnector("/dev/usb/lp0");
+$csv = readCSV("data/data.csv");
+$checkins = createCheckins("data");
+
 $printer = new Printer($connector);
 
-
-//NEWS
-$printer -> setEmphasis(true);
-$printer -> setTextSize(3,3);
-$printer -> setJustification(Printer::JUSTIFY_CENTER);
-//logo
-$img = EscposImage::load($logo);
-$printer -> graphics($img, Printer::IMG_DOUBLE_WIDTH | Printer::IMG_DOUBLE_HEIGHT);
-//header
-$printer -> text("News\n");
-//reset
-$printer -> setEmphasis(false);
-$printer -> setTextSize(1,1);
-
-for ($i=0; $i < 10; $i++) { 
-    $new = $news->{'channel'}->{'item'}[$i];
-    $printer -> setEmphasis(true);
-    $printer -> text($new->{'title'} . "\n \n");
-}
-
-//WEATHER
-$printer -> setEmphasis(true);
-$printer -> setTextSize(3,3);
-$printer -> setJustification(Printer::JUSTIFY_CENTER);
-$printer -> text("Weather\n");
-//reset
-$printer -> setEmphasis(false);
-$printer -> setTextSize(1,1);
-foreach ($synp as $key => $value) {
-    $printer -> text($value . "\n");
-}
-
-/* Disabled until oauth fixed
-
-//MONZO
-$printer -> setEmphasis(true);
-$printer -> setTextSize(3,3);
-$printer -> setJustification(Printer::JUSTIFY_CENTER);
-//logo
-$img = EscposImage::load($monzo);
-$printer -> graphics($img);
-
-//GET MONZO DATA
-$ch = curl_init();
-$access_token = "";
-
-curl_setopt($ch, CURLOPT_URL, "https://api.monzo.com/balance?account_id=acc_00009NVp08a46H5Sr2jaSH");
-curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, ['Authorization: Bearer ' . $access_token]);
-
-$result = curl_exec($ch);
-if (curl_errno($ch)) {
-    $printer->text("Boo :( Monzo isn't working");
-} else {
-    $resultStatus = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    if ($resultStatus == 200) {
-        $result = json_decode($result, true);
-        $printer -> text("Balance: £" . $result['balance']/100 . "\n");
-        $printer -> text("Today: £" . $result['spend_today']/100 . "\n");
+while (($input = readline("Scan QR code: ")) != null) {
+    if(($attendee = findAttendee($input, $csv)) != null){
+        echo("\033[34m [ATTENDEE FOUND] \033[0m \n");
+        if(strtolower(readline($attendee[1] . ": y/n? ")) === "y"){
+            echo("\033[33m [CHECKED IN] \033[0m \n");
+            writeCheckin($checkins, $attendee[5]);
+            echo("\033[32m [PRINTING...] \033[0m \n");
+            genSticker($printer, $attendee[5], $attendee[2], $attendee[3], $attendee[4]);
+        } else {
+            echo("\033[33m [NOT CHECKED IN] \033[0m \n");
+        }
     } else {
-        $printer->text("Boo :( Monzo isn't working - " . $resultStatus);
+        echo("\033[31m [ERROR] \033[0m attendee not found \n");
     }
 }
 
+function writeCheckin($handle, $email){
+    return fwrite($handle, $email . "," . time() . "\n\r");
+}
 
-curl_close($ch);
-*/
+function createCheckins($dir){
+    return fopen($dir . "/checkins_" . time() . ".csv", "x");
+}
 
-//end
-$printer -> cut();
-$printer->close();
+function findAttendee($email, $csv){
+    foreach ($csv as $key => $value) {
+        if(strcasecmp($value[0], $email) == 0){
+            return $csv[$key];
+        }
+    }
+    return null;
+}
+
+function readCSV($fname){
+    if(file_exists($fname)){
+        return array_map('str_getcsv', file($fname));
+    } else {
+        throw new exception("Missing CSV to import");
+    }
+}
+
+function genSticker($printer, $email, $choice, $allergy, $pos){
+    $printer->selectPrintMode(Printer::MODE_DOUBLE_WIDTH);
+    $printer->setJustification(Printer::JUSTIFY_CENTER);
+    $printer->text("Royal Hackaway v2 \n");
+
+    //Print Sitting letter
+    switch (strtolower($pos)) {
+        case 'a':
+            $logo =  __DIR__ .  "/assets/a.png";
+            break;
+        
+        case 'b':
+            $logo =  __DIR__ .  "/assets/b.png";
+            break;
+        
+        case 'c':
+            $logo =  __DIR__ .  "/assets/c.png";
+            break;
+        
+        default:
+            echo("\033[31m [ERROR] \033[0m Weird meal sitting letter \n");
+            return;
+    }
+    $img = EscposImage::load($logo);
+    $printer->bitImage($img);
+
+    //print text
+    $printer->setJustification(Printer::JUSTIFY_LEFT);
+    $printer->setEmphasis(false);
+    $printer->setTextSize(1,1);
+
+    $printer->text("Email: " . $email . "\n");
+    $printer->text("Choice: " . $choice . " \n");
+    $printer->text("Allergies: " . $allergy . " \n");
+
+    //end
+    $printer->cut();
+
+    return;
+}
+
+function shutdown(){
+    global $printer;
+    global $checkins;
+    
+    //Close resources
+    $printer->close();
+    fclose($checkins);
+
+    echo("\033[35m [EXITING] \033[0m");
+}   
 ?>
