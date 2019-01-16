@@ -51,6 +51,9 @@ function findAttendee($qr){
             echo("\033[33m [NO DINNER CHOICE] \033[0m \n");
             $choice[1] = $record[7];
             $choice[2] = onFlyChoice();
+            $choice[3] = readline("Enter allergies: ");
+            $choice[4] = getNextSitting();
+            return $choice;
         }
     } else {
         //QR does not exist
