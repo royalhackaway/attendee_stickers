@@ -18,11 +18,12 @@ $counter = 0;
 $printer = new Printer($connector);
 
 while (($input = readline("Scan QR code: ")) != null) {
-    if(($attendee = findAttendee($input, $csv)) != null){
+    if(($attendee = findAttendee($input)) != null){
         echo("\033[34m [ATTENDEE FOUND] \033[0m \n");
         if(strtolower(readline($attendee[1] . ": y/n? ")) === "y"){
             echo("\033[33m [CHECKED IN] \033[0m \n");
-            writeCheckin($checkins, $attendee[5]);
+            var_dump($attendee);
+            writeCheckin($checkins, $attendee[1], $attendee[2], $attendee[3]);
             echo("\033[32m [PRINTING...] \033[0m \n");
             genSticker($printer, $attendee[1], $attendee[2], $attendee[3], $attendee[4]);
         } else {
@@ -34,8 +35,8 @@ while (($input = readline("Scan QR code: ")) != null) {
     }
 }
 
-function writeCheckin($handle, $email){
-    return fwrite($handle, $email . "," . time() . "\n\r");
+function writeCheckin($handle, $email, $choice, $allergy){
+    return fputcsv($handle, [$email, time(), $choice, $allergy]);
 }
 
 function createCheckins($dir){
@@ -93,6 +94,7 @@ function onFlyChoice(){
 }
 
 function getNextSitting(){
+    global $counter;
     if($counter % 3 == 0){
         return 'C';
     } elseif ($counter % 2 == 0){
@@ -108,7 +110,7 @@ function checkMasterSheet($qr){
 
     foreach ($master as $key => $value){
         //Check the QR value against the sanitised unique ticket URL
-        if(strcasecmp(preg_replace("^(https:\/\/ti\.to\/tickets\/)", "", $value[16]), $qr) == 0){
+        if(strcasecmp(preg_replace("^(https:\/\/ti\.to\/tickets\/)^", "", $value[16]), $qr) == 0){
             //Return the record 
             return $value;
         }

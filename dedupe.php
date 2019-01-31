@@ -1,28 +1,36 @@
 <?php
 
-$dinnerChoices = readCSV("data/data.csv");
+$dinnerChoices = readCSV("data/choices.csv");
 $output = createOutput("data");
 
+$deduped = [];
 foreach ($dinnerChoices as $key => $row) {
     $matches = [];
     foreach ($dinnerChoices as $key1 => $value) {
-        array_push($matches, $value);
+        if($value[1] == $row[1]){
+            array_push($matches, $value);
+        }
     }
 
-    echo $matches[0][1];
+    echo $matches[0][1] . "\n";
 
     if(sizeof($matches) != 1){
-        foreach ($matches as $key2 => $value) {
-            echo "[" . $key2 . "] " . $value[2] . " | " . $value[3]; 
-        }
-
-        if(in_array(($input = readline("Line number: ")), range(0, sizeof($matches) -1))){
-            createOutput($output, $matches[$input]);
+        if(in_array($matches[0][1], $deduped)){
+            echo "Already deduped \n";
         } else {
-            throw new exception("Choice out of bounds");
+            foreach ($matches as $key2 => $value) {
+                echo "[" . $key2 . "] " . $value[2] . " | " . $value[3] . "\n"; 
+            }
+    
+            if(in_array(($input = readline("Line number: ")), range(0, sizeof($matches) -1))){
+                writeOutput($output, $matches[$input]);
+            } else {
+                throw new exception("Choice out of bounds");
+            }
+            array_push($deduped, $matches[0][1]);
         }
     } else {
-        createOutput($output, $matches[0]);
+        writeOutput($output, $matches[0]);
     }
 }
 
@@ -35,9 +43,9 @@ function readCSV($fname){
 }
 
 function createOutput($dir){
-    return fopen($dir . "/output_" . time() . ".csv", "x");
+    return fopen($dir . "/choices-output_" . time() . ".csv", "x");
 }
 
 function writeOutput($handle, $row){
-    return fwrite($handle, $row . "\n\r");
+    fputcsv($handle, $row);
 }
