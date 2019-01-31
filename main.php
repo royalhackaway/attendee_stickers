@@ -9,7 +9,7 @@ use Mike42\Escpos\EscposImage;
 register_shutdown_function("shutdown");
 
 // PLEASE CHANGE AS NEEDED
-$connector = new FilePrintConnector("/dev/usb/lp0");
+$connector = new FilePrintConnector("/dev/usb/lp1");
 $dinnerChoices = readCSV("data/data.csv");
 $master = readCSV("data/master.csv");
 $checkins = createCheckins("data");
